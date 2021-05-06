@@ -1,0 +1,159 @@
+*
+{
+    box-sizing: border-box;
+}
+
+body
+{
+    background: linear-gradient(to bottom, #fceabb, #f8b500);
+    font-family: Montserrat, sans-serif;
+    max-width: 1024px;
+    min-height: 100vh;
+    padding: 2rem 0;
+}
+
+h2
+{
+    color: #19547b;
+    text-decoration: underline;
+    text-decoration-color: #19547b;
+}
+h4
+{
+    color: #19547b;
+}
+
+main
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+nav
+{
+    margin-bottom: 2rem;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav a{
+    
+    color: orange;
+}
+
+nav img{
+    width: 10%;
+    padding-right: 1rem;
+}
+
+.cocktail
+{
+    margin-bottom: 3rem;
+    width: 16rem;
+}
+.cocktail .card-text
+{
+    font-size: 90%;
+    text-align: justify;
+}
+
+.produit{
+    display: flex;
+    align-items: center;
+}
+
+.produit img{
+    width : 100%;
+}
+
+.description{
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+.produit h4{
+    color: orange;
+    padding-bottom: 2rem;
+    
+}
+
+/* formulaire */
+
+
+
+.formulaire{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.formulaire h4{
+    padding: 2rem 0 2rem 0;
+}
+
+
+
+
+.formulaire input, textarea{
+    width: 42%;
+    
+}
+
+.formulaire label{
+    padding-left: 3rem;
+    width: 40%;
+}
+
+.formulaire input, textarea{
+    margin-bottom: 2rem;
+}
+
+.formulaire button{
+    margin-left: 3rem;
+}
+
+button.creation{
+    margin-top: 1rem;
+}
+
+/* Max - Les formulaires responsives sans trop se faire chier :) avec des tables pas table mais en fait si */
+form label {
+    margin-bottom: 0;
+}
+form td {
+    padding: 0.5em 1em;
+    vertical-align: middle;
+}
+form td:first-child {
+    text-align: center;
+}
+/* submit */
+form td:last-child {
+    text-align: center;
+}
+form input, form textarea, form select {
+    min-width: 100%;
+    padding: 0.5em 1em;
+}
+
+/* Les tables c'est pas des tables :D on empile */
+form td {
+    display: block;
+}
+
+/* A partir des tablettes, on "répare les tables" */
+@media (min-width: 767px) {
+    form td {
+        display: table-cell;
+    }
+
+    form td:first-child {
+        text-align: right;
+    }
+}
